@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         if (instance == null) instance = this;
     }
 
+    // 인벤토리에서 아이템을 장착했을 때
     public void AddItem(Item item)
     {
         switch (item.type)
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // 인벤토리에서 아이템을 뺐을 때
     public void RemoveItem(Item item)
     {
         switch (item.type)
